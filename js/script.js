@@ -13,8 +13,9 @@ let remainingGuesses = 8;
 
 const getWord = async function() {
     const response = await fetch (
-        "https://gist.githubusercontent.com/skillcrush-curriculum/7061f1d4d3d5bfe47efbfbcfe42bf57e/raw/5ffc447694486e7dea686f34a6c085ae371b43fe/words.txt"
-    );
+        //"https://gist.githubusercontent.com/skillcrush-curriculum/7061f1d4d3d5bfe47efbfbcfe42bf57e/raw/5ffc447694486e7dea686f34a6c085ae371b43fe/words.txt"//
+        "https://gist.githubusercontent.com/kellyraefoote/f47d0de93d48b47c6be4b1604ea743c1/raw/fa3ff5c30bc974cec6e414581e4d7aad6b66d198/harry_potter_words.txt"
+        );
     const words = await response.text();
     //console.log(words);//
     const wordArray = words.split("\n");
