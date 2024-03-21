@@ -54,7 +54,7 @@ const validateInput = function (input) {
     } else if (input.length > 1){
         message.innerText = "Please input a single letter.";
     } else if (!input.match(acceptedLetter)) {
-        message.innerText = "Please enter a letter A to Z"
+        message.innerText = "Please enter a letter A to Z."
     } else {
         return input;
     }
@@ -121,7 +121,7 @@ const updateGuessesRemaining = function (guess) {
 const checkIfWin = function() {
     if (word.toUpperCase() === wordInProgress.innerText) {
         message.classList.add("win");
-        message.innerHTML = `<p class="highlight">You guessed correct the word! Congrats!</p>`;
+        message.innerHTML = `<p class="highlight">You guessed the correct word! Congrats!</p>`;
          startOver();
     }
 };
