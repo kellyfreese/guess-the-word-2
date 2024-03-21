@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   resize: both;
   background-repeat: no-repeat;
   color: #e4b130;
+  height: 100%;
 }
 
 .logo {
