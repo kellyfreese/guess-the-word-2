@@ -111,7 +111,7 @@ const updateGuessesRemaining = function (guess) {
     } else if (remainingGuesses ===1){
         remainingGuessesSpan.innerText = `${remainingGuesses} guess`;
     } else {
-        remainingGuessesSpan.innerText = `${remainingGuesses} guess`;
+        remainingGuessesSpan.innerText = `${remainingGuesses} guesses`;
     }
 }
 
