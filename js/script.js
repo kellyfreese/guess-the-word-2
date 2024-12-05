@@ -13,7 +13,7 @@ let remainingGuesses = 8;
 
 const getWord = async function() {
     const response = await fetch (
-        "https://gist.github.com/kellyfreese/f47d0de93d48b47c6be4b1604ea743c1.js"
+        "https://gist.github.com/kellyfreese/f47d0de93d48b47c6be4b1604ea743c1"
         );
     const words = await response.text();
     const wordArray = words.split("\n");
