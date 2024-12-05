@@ -13,7 +13,7 @@ let remainingGuesses = 8;
 
 const getWord = async function() {
     const response = await fetch (
-        "https://gist.github.com/kellyfreese/f47d0de93d48b47c6be4b1604ea743c1"
+        "https://gist.githubusercontent.com/kellyfreese/f47d0de93d48b47c6be4b1604ea743c1/raw/8ef0fea3632342ac50f0b3514fc648cf8f061944/harry_potter_words.txt"
         );
     const words = await response.text();
     const wordArray = words.split("\n");
